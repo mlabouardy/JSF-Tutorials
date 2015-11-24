@@ -4,7 +4,7 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
-	<title>Home page</title>
+	<title>Welcome page</title>
 	<link type="text/css" rel="stylesheet"
 		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
 	<h:outputStylesheet library="theme" name="css/style.css"></h:outputStylesheet>
@@ -12,12 +12,7 @@
 
 <h:body>
 	<div class="container container-padding-top">
-		<h:form>
-			<div class="form-group">
-				<h:inputText value="#{userBean.name}" styleClass="form-control"></h:inputText>
-			</div>
-			<h:commandButton value="Create" styleClass="btn btn-success btn-block" action="welcome"></h:commandButton>
-		</h:form>
+		<h2>Welcome #{userBean.name}</h2>
 	</div>
 </h:body>
 

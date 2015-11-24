@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Welcome</title>
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+	<h:outputStylesheet library="theme" name="style/css/style.css"></h:outputStylesheet>
+</h:head>
+
+<h:body>
+	<div class="container container-margin-top">
+		<h:form>
+			<div class="form-group">
+				<label>Name:</label>
+				<h:inputText value="name" styleClass="form-control"></h:inputText>
+			</div>
+							<h:commandButton value="Welcome" action="welcome"
+					styleClass="btn btn-success btn-block"></h:commandButton>
+		</h:form>
+	</div>
+</h:body>
+
+</html>
